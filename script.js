@@ -46,6 +46,7 @@ function filterHandler(e){
     if(e.currentTarget.classList.contains("active")){
         e.currentTarget.classList.remove("active");
         loadTickets();
+        modalVisible=false;
     }
     else{
         let selectedFilter=document.querySelector(".filter.active");
