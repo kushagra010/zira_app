@@ -23,15 +23,15 @@ function loadTickets(priority){
                             <div class="task">
                                 ${data[i].task}
                             </div>`;
-            TC.appendChild(ticket);
-            ticket.addEventListener("click",function(e){
-                if(e.currentTarget.classList.contains("active")){
+            ticket.addEventListener("click", function (e) {
+                if (e.currentTarget.classList.contains("active")) {
                     e.currentTarget.classList.remove("active");
                 }
-                else{
+                else {
                     e.currentTarget.classList.add("active");
                 }
             });
+            TC.appendChild(ticket);
         }
     }
 }
@@ -133,7 +133,7 @@ function addTicket(taskTyper,e){
             localStorage.setItem("allTasks",JSON.stringify(data));
         }
         let selectedFilter=document.querySelector(".filter.active");
-        if(selectedPriority){
+        if(selectedFilter){
             let priority=selectedFilter.children[0].classList[0].split("-")[0];
             loadTickets(priority);
         }
