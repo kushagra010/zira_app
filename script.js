@@ -54,6 +54,7 @@ function filterHandler(e){
         }
         e.currentTarget.classList.add("active");
         loadTickets(e.currentTarget.children[0].classList[0].split("-")[0]);
+        modalVisible=false;
     }
 }
 
