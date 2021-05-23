@@ -1,1 +1,1 @@
-# zira_app
+Created a web app using HTML, CSS, JavaScript and local storage of browser for storing data, where user can create or delete tickets and set its priority, these tickets will be shown according to their priority.
